@@ -33,9 +33,6 @@ func (fs *FileService) SaveFile(file models.File) (models.File, error) {
 }
 
 func (fs *FileService) GetFileByID(file *models.File, fileID string, userID uint) error {
-
-	// query := `SELECT id, file_name FROM files WHERE id = $1 and user_id = $2`
-
 	query := `SELECT id, file_name FROM files WHERE id = $1`
 	err := fs.db.Get(file, query, fileID)
 	if err != nil {

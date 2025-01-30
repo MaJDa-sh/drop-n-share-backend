@@ -33,6 +33,4 @@ func SetupRoutes(db *sqlx.DB, router *mux.Router) {
 	router.HandleFunc("/files/index", fileController.FilesBuildSearchIndex).Methods("GET")
 	router.HandleFunc("/files/search", fileController.SearchFiles).Methods("POST")
 
-	// protected.HandleFunc("/search", controllers.SearchFilesHandler)
-
 }
