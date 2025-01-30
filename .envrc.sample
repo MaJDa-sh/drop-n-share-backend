@@ -1,0 +1,7 @@
+export DATABASE_URL="postgres://postgres:postgres@localhost/drop_n_share_dev?sslmode=disable"
+export ELASTICSEARCH_URL="http://localhost:9200"
+export DATABASE=drop_n_share_dev
+export SECRET_KEY="your-secret-key"
+export GOOSE_MIGRATION_DIR=db/migrations
+export GOOSE_DRIVER=postgres
+export GOOSE_DBSTRING="$DATABASE_URL"
